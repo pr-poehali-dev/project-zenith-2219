@@ -43,6 +43,15 @@ export default function LandingPage() {
 
   return (
     <Layout>
+      <div className="absolute top-0 left-0 right-0 z-30 flex items-center gap-3 px-6 py-4">
+        <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+          <span className="text-black font-bold text-xs leading-none">НЭ<br/>ТК</span>
+        </div>
+        <div className="flex flex-col leading-tight">
+          <span className="text-white font-semibold text-sm tracking-wide">НЭТК</span>
+          <span className="text-white/50 text-xs">Нижегородский экономико-технологический колледж</span>
+        </div>
+      </div>
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
         {sections.map((section, index) => (
           <button
